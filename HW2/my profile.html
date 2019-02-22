@@ -1,14 +1,245 @@
 <html>
+
+    
+    
+    
+    
 <head>
-
+    <title>Big Road: Simplist's solution to a mobile-only web story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
+    <style>
+        /* Inspired by: http://embedresponsively.com/ */
+        
+        responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-1-to-1 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-4-to-3 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        responsive-block iframe,
+        responsive-block object,
+        responsive-block embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        figure {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        figure figcaption {
+            display: block;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 0.85em;
+        }
+        
+        h2 {
+            border-bottom: 1px solid #ccc;
+            margin-top: 2em
+        }
+        
+        cover-image {
+            display: block;
+            position: relative;
+        }
+        
+        cover-image h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #eee;
+            text-align: center;
+        }
+        
+        cover-image author-block {
+            position: absolute;
+            bottom: 1em;
+            left: 0;
+            right: 0;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.6;
+            background-color: white;
+        }
+        
+        code {
+            margin: 0;
+            max-width: 100%;
+            word-break: break-all;
+            font-family: monospace;
+        }
+          footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: grey;
+            color: purple;
+            text-align: center;
+        }
+    </style>
 </head>
+                         
 <body>
- <title> Felicity's profile 
- </title>
- <ul> my life is fantastic </ul>
- <p>this is my profile</p>
+    <cover-image>
+        <img src="images/picture 1.png"alt="cover photo">
+        <h1>
+            The Wandering Earth 
+        </h1>
+        <author-block>
+            <em>By</em>
+            <br>
+            <strong>
+                South China Morning Post; Felicity 
+            </strong>
+        </author-block>
+    </cover-image>
 
+    <p><li>The film, starring Wolf Warrior’s Wu Jing, is a sci-fi movie of epic scale that rivals Hollywood blockbusters like Interstellar and Gravity.</li>
+       <li>Hopes are high that it will inspire more quality Chinese sci-fi blockbusters after a frankly embarrassing line of substandard production.</li></p>
 
-
+    <h2> background </h2>
+   
+    <ul>
+        <li> Laden with an extravaganza of special effects, <strong>The Wandering Earth</strong>(out in China on February 5) is a Chinese science fiction movie of epic scale that rivals Hollywood space blockbusters like<strong> Interstellar and Gravity.</strong></li>
+        <li> Adapted from the novel of the same name by renowned science fiction author Liu Cixin – the first author from Asia to win best novel at the Hugo sci-fi and fantasy literary awards, for<strong> The Three-Body Problem</strong> in 2015 – the film has created a large buzz in China, with a series of screenings generating rave reviews.</li>
+    </ul>   
+            
+   <h3>The poster:</h3>
+    
+    <figure>
+        <img src="images/picture 3.png" alt="">
+    </figure>
+    
+    <h2>The information about chinese fiction</h2>
+    
+    <p>Movers and shakers in China’s scientific community are singing the film’s praises, saying it heralds a new dawn for Chinese sci-fi cinema.
+    </p>
+    <p>While China’s movie industry has enjoyed spectacular growth since the country’s opening up 40 years ago, science fiction is a genre that has been left mostly underdeveloped due to huge technical costs and the deep philosophical depth often involved in plots.
+    </p>
+    <p> Ji Shaoting, co-founder of the Future Affairs Administration, which promotes Chinese science fiction writers and is the film’s official promoter, told ifeng.com last year that many Chinese TV and movie companies eager to make science fiction productions lack basic understanding of the genre.
+    </p>
+    <p>“For example, Resident Evil and Interstellar are totally different works,” she said. “The stories by [science fiction authors] Han Song and Liu Cixin are also different.”</p>
+    
+     <responsive-block>
+        <iframe src='https://www.youtube.com/embed/c8LAwozrXPo' frameborder='0' allowfullscreen>
+        </iframe>
+    </responsive-block>
+   
+    <p> The history of Chinese science fiction movies is an embarrassing mixture of substandard productions and lacklustre box office results.</ul>
+    <p>According to a 2018 report on China’s science fiction industry released by the Southern University of Science and Technology in Shenzhen, the total China box office for science fiction movies in 2017 was 13 billion yuan (US$1.9 billion), but Chinese productions accounted for only 1.3 billion yuan, or 10 per cent. In the first half of 2018, the total China box office for science fiction movies was 9.5 billion yuan, of which only 890 million yuan, or 9 per cent, was chalked up by Chinese productions.</p>
+    <p>Foreign science fiction productions like Interstellar, Gravity and Lucy were blockbusters in China and account for one-third of all foreign movie imports since 2012.</p>
+    <p>In comparison, Chinese science fiction fare like <strong>Future X-Cops (2010)</strong> and <strong>Metallic Attraction:：Kungfu Cyborg (2009)</strong> are embarrassing productions where science fiction elements do not even constitute the main plot.</p>
+    <p>Meanwhile, a much-hyped movie adapted from Liu’s critically acclaimed The Three-Body Problem has been shelved, leading commentators to say that China’s movie-making standard does not measure up to the epic scale portrayed in the book.</p>
+    
+    <figure>
+        <img src="images/picture 5.png" alt="">
+        <figcaption>
+            <em>A main character in the film</em>
+        </figcaption>
+    </figure>
+    
+    <p>
+        Alex Li, co-founder of the Future Affairs Administration, told chinawriter.com in 2016 that it might take a decade for local science fiction productions to enjoy the same popularity at the China box office as Hollywood productions.
+    </p>
+    <p>
+        “Science fiction accounts for a very high proportion of the box office,” he said “It’s impossible for local industry players and capital to just cede the profits generated from the sector to Hollywood. But the process might last up to a decade. We believe in local science fiction productions and we are willing to wait.”
+    </p>
+    <p>
+        The long wait might be over prematurely with the release of<strong> The Wandering Earth.</strong.>
+    </p>
+    
+    <h3>A still from The Wandering Earth</h3>
+                  
+    <figure>
+        <img src="images/picture 2.png" alt="">
+    </figure>
+   
+    <h2>story on this film</h2>
+    
+    <p>The film portrays how a group of intrepid Chinese astronauts save the world from the brink of annihilation due to the imminent destruction of the sun. Like Hollywood space movies where Americans are portrayed as the only ones capable of saving humanity, here Chinese astronauts are the sole adventurers among the global space community determined to complete the arduous task of fending off the apocalypse.</p>
+    <p>In spite of such overt patriotism, the film is spectacular for its ceaseless stream of hair-raising close-shave encounters and apocalyptic landscapes oozing desolation and despair. There is also a touching subplot involving family bonds at the centre of the mission to save the earth.</p>
+    <p>Wu Jing – who directed and starred in the hugely patriotic Wolf Warrior blockbuster series – plays the father in the family, a Chinese astronaut stationed in space who has been away from his family for years.</p>
+    <p>Wu told huanqiu.com recently that 2019 is the “inaugural” year of Chinese science fiction movies due to the release of The Wandering Earth.</p>
+    <p>“When director<em> Frant Gwo</em> first came to me to explain all the physics data, I didn’t understand it at all,” he said. “However, in him, I saw traces of me when I made the<em> first Wolf Warrior</em?>, when I went everywhere telling people how the helicopter, tanks and explosions worked. Like him, I was close to breaking down then.</p>
+    
+    <figure>
+        <img src="images/picture 4.png"alt="">
+        <figcaption>
+            <h4> Frant Gwo: the director</h4>
+         </figcaption>
+     </figure>            
+    <p>“I told him, I can help you as long as you will help young people involved in new film genres after you become successful. Later, capital for making the movie became tight, so I told him I didn’t need to get paid. I shot the movie for 31 days. Later, money ran out. I told Gwo that we are in the same boat and I don’t want to regret putting effort into the movie, so I became an investor as well.”</p>
+    <p>Although Wu is not a big fan of science fiction movies, he said the making of The Wandering Earth helped him understand the genre.</p>
+       
+    <figure>
+        <img src="images/picture 6.png"alt="">
+        <figcaption>
+            <h4> Wu Jing's character in <em>The wandering earth</em>. Crying for dying and leaving his son.</h4>
+            </figcaption>
+    </figure>
+    
+    <p>“Chinese science fiction fans have seen all the world-class science fiction movies and they have waited for a long time with patience [for good] Chinese science fiction movies,” he said.</p>
+    <p>“The Chinese have landed on the dark side of the moon. No humans have done this before. Such scientific achievements and development have set up a solid foundation. No Chinese filmmakers have made anything like The Wandering Earth. Seven thousand people worked on the movie. It has at least nurtured 7,000 people’s basic knowledge in science fiction movies.”<p>
+    <p>In a discussion session after a recent screening held at the China Science and Technology Museum in Beijing, Gwo said he has been a fan of science fiction since childhood and has now realised his dream of making a science fiction movie.</p>
+    <p>“When making the movie, we learned from Hollywood production flow and methods. We have overcome many unimaginable difficulties to make it. I hope this movie will prompt more directors to try the genre and boost investors’ confidence in it.”</p>
+    
+    
+    <h5>sourses: South China Morning Post(Made a few adjustment.)</h5>
+    <li> If you want to see the origin website plesae go to 
+        <a href="https://www.scmp.com/culture/film-tv/article/2184706/wandering-earth-could-be-film-spark-chinas-science-fiction">this link</a> 
+   
+   
 </body>
+
+<footer>
+    <p>From: Felicty</p>
+    <a href="http://datavis.studio">http://datavis.studio</a> 
+</footer>
+
 </html>

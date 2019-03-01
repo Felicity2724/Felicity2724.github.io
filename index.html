@@ -14,22 +14,53 @@
             text-align: center;
             background-color: burlywood;
         }
+        
+        li {
+            color: black;
+            font-size: 120%;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <h1> there are some information on myself.
+    <h1> CV of Felicity 董心悦
     </h1>
-    <li>My name: Felicity</li>
-    <li>My age: 18</li>
-    <li>Year of school: Year 1</li>
-    <li>faculty: school of communication</li>
+    <div class="row">
+        <div class="column" style="">
+        
 
+        </div>
+        <div class="column" style="">
+            <li>My age: 18</li>
+            <li>Year of school: Year 1</li>
+            <li>faculty: school of communication</li>
+        </div>
+    </div>
 </body>
 
 
+
+
+</html>
 
 
 

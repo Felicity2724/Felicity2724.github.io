@@ -2,7 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Felicity's profile </title>
+    <title> Felicity's protfolio </title>
 
     <style>
         body {
@@ -27,7 +27,7 @@
         
         .column {
             float: left;
-            width: 50%;
+            width: 40%;
             padding: 10px;
             height: 200px;
         }
@@ -39,7 +39,25 @@
         }
         
         img {
-            margin-left: 80px
+            margin-left: 50px;
+            margin-right: auto;
+            border-radius: 50%
+        }
+        
+        @media (min-width: 1000px) {
+            .row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: /* prettier-ignore */
+                "c1 c2"
+            }
+            .column1 {
+                grid-area: "c1"
+            }
+            .column2 {
+                grid-area: "c2"
+            }
         }
     </style>
 
@@ -47,14 +65,18 @@
 
 <body>
 
-    <h1> CV of Felicity 董心悦
+    <h1 class="animated pulse"> CV of Felicity
     </h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
     <div class="row">
-        <div class="column 1" style="">
-            <img src="CV photo 1.png" alt="" width="363.8" height="454.6">
+        <div class="column1">
+            <div>
+                <img src="CV photo 1.png" alt="photo 1" width="363.8" height="454.6">
+            </div>
 
         </div>
-        <div class="column 2" style="">
+        <div class="column2">
             <li>My age: 18</li>
             <li>Year of school: Year 1</li>
             <li>faculty: school of communication</li>

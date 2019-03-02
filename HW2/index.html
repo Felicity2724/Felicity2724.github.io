@@ -1,15 +1,49 @@
 <html>
-<head> 
 
+<head>
+    <style>
+        @media (min-width:400px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+        @media (max-width:700px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<title> Felicity's profile </title>
-<head2> there are some information on myself. 
-</head2>>
-<li>My name: Felicity</li>
-<li>My age: 18</li>
-<li>Year of school: Year 1</li>
-<li>faculty: school of communication</li>
+    <style>
+        .photo {
+            min-width: 100px;
+            min-height: 100px;
+            background-color: antiquewhite;
+            border: lightblue 1px solid;
+            margin: 5px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+        <div class="photo">Photo</div>
+    </div>
+    <title> Felicity's profile </title>
+    <head2> there are some information on myself.
+    </head2>>
+    <li>My name: Felicity</li>
+    <li>My age: 18</li>
+    <li>Year of school: Year 1</li>
+    <li>faculty: school of communication</li>
 
 </body>
 
@@ -23,10 +57,3 @@
 
 
 </html>
-
-    
-    
-    
-    
-
-   

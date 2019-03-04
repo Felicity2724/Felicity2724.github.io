@@ -21,8 +21,24 @@
             font-size: 120%;
         }
         
+        .column1 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .column2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         * {
             box-sizing: border-box;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
         
         .column {
@@ -32,22 +48,13 @@
             height: 200px;
         }
         
-        .column1 {
-            background-color: bisque
-        }
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        
         img {
-            margin-left: 100px;
-            border-radius: 50%
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        @media (min-width: 1000px) {
+        @media (min-width: 650px) {
             .row {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -63,8 +70,8 @@
             }
         }
         
-        .column2 {
-            text: center;
+        h2 {
+            text-align: center;
         }
     </style>
 
@@ -72,28 +79,36 @@
 
 <body>
 
-    <h1 class="animated pulse"> CV of Felicity
+    <h1 class="animated bounceInRight "> CV of Felicity
     </h1>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <h2> Basic information
+    </h2>
 
     <div class="row">
         <div class="column1">
 
             <div>
-                <img src="CV photo 1.png" alt="photo 1" width="363.8" height="454.6">
+                <img class="animated fadeInLeft" src="CV photo 1.png" alt="photo 1" width="363.8" height="454.6">
             </div>
-
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         </div>
         <div class="column2">
+            <li>Chinese full name :董心悦</li>
+            <li>Phone number: (+852) 56437054 </li>
             <li>My age: 18</li>
             <li>Year of school: Year 1</li>
-            <li>faculty: school of communication</li>
+            <li>Faculty: school of communication</li>
             <p>
                 These are the projects I have worked on:
             </p>
             <p><a href="hw1/index.html">Homework 1</a></p>
+            <p><a href="HW2/index.html">Homework 2</a></p>
         </div>
     </div>
+    <h2>More detailed content. </h2>
+    <p> I am a first year student communicaton student at Hong Kong Baptist School. I have developed excellent communication and leadership kills through my study here. And I am interested in journalism amoung the three majors.
+    </p>
 </body>
 
 

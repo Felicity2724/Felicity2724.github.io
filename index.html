@@ -5,6 +5,25 @@
     <title> Felicity's protfolio </title>
 
     <style>
+        /* Grow */
+        
+        .hvr-grow {
+            display: inline-block;
+            vertical-align: middle;
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            transition-duration: 0.3s;
+            transition-property: transform;
+        }
+        
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            transform: scale(1.1);
+        }
+        
         body {
             font-size: 16px
         }
@@ -89,26 +108,30 @@
         <div class="column1">
 
             <div>
-                <img class="animated fadeInLeft" src="CV photo 1.png" alt="photo 1" width="363.8" height="454.6">
+                <img class="hvr-grow" src="CV photo 1.png" alt="photo 1" width="363.8" height="454.6">
             </div>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         </div>
         <div class="column2">
             <li>Chinese full name :董心悦</li>
             <li>Phone number: (+852) 56437054 </li>
+            <li> Email address: felicity2724@gmail.com</li>
             <li>My age: 18</li>
             <li>Year of school: Year 1</li>
-            <li>Faculty: school of communication</li>
-            <p>
-                These are the projects I have worked on:
-            </p>
+            <li>University: Hong Kong Baptist University</li>
+            <h4 style="text-align: center;">
+                JOUR2106 Date Visalization homeworks:
+            </h4>
             <p><a href="hw1/index.html">Homework 1</a></p>
             <p><a href="HW2/index.html">Homework 2</a></p>
         </div>
     </div>
     <h2>More detailed content. </h2>
-    <p> I am a first year student communicaton student at Hong Kong Baptist School. I have developed excellent communication and leadership kills through my study here. And I am interested in journalism amoung the three majors.
-    </p>
+    <ul>
+
+        <p>Being a first year communicaton student at Hong Kong Baptist University, I have developed excellent communication and leadership kills through my study here. And I am interested in Data and Media Communication. I am now looking forward to fruthur
+            explore this field.
+        </p>
+    </ul>
 </body>
 
 

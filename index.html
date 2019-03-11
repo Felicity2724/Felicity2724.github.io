@@ -2,6 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> Felicity's protfolio </title>
 
     <style>
@@ -49,8 +50,10 @@
         }
         
         .column2 {
+            margin-top: 50px;
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
         }
         
         * {
@@ -112,6 +115,40 @@
         h4 {
             color: thistle;
         }
+        
+        .wrapper {
+            display: inline-flex;
+            justify-content: center;
+        }
+        
+        .wrapper i {
+            padding: 10px;
+            text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+            transition: all ease-in-out 150ms;
+        }
+        
+        .wrapper a:nth-child(1) {
+            color: #4867AA;
+        }
+        
+        .wrapper a:nth-child(2) {
+            color: #1DA1F2;
+        }
+        
+        .wrapper a:nth-child(3) {
+            color: rgb(62, 179, 38);
+        }
+        
+        .wrapper i:hover {
+            margin-top: -3px;
+            text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            position: sticky;
+            color: rgb(240, 188, 179);
+        }
     </style>
 
 </head>
@@ -132,6 +169,7 @@
             </div>
         </div>
         <div class="column2">
+
             <li>Chinese full name :董心悦</li>
             <li>Phone number: (+852) 56437054 </li>
             <li> Email address: felicity2724@gmail.com</li>
@@ -159,6 +197,15 @@
             In my spare time, I joined the Mandarin Debate Club in HKBU. The experience there equipped me with creative thoughts and critical thinking.
         </p>
     </ul>
+    <footer>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="wrapper">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100028190071817"><i class="fa fa-3x fa-facebook-square"></i></a>
+            <a target="_blank" href="https://www.instagram.com/xinyue2724/"><i class="fa fa-3x fa-instagram"></i></a>
+            <a target="_blank" href="cv photo3.png"><i class="fa fa-3x fa-wechat"></i></a>
+        </div>
+        </a>
+    </footer>
 
 </body>
 

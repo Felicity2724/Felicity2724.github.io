@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+        }
+    </style>
+    <div class="container">
+        <div>
+            <h2> Statutory holiday overtime pay</h2>
+            Monthly Salary:
+            <input id="num1" type="number" value="30000"> Regular holiday overtime working hours:
+            <input id="num2" type="number" value="20">
+            <br>
+            <button id="cal">Calculate</button>
+            <br> Results:
+            <input id="result" type="number">
+
+        </div>
+
+        <p>
+            Accodring to "People's Republic of China Labor Law", On the statutory holiday, the employer who works for the laborer pays not less than 300% of the salary.
+        </p>
+        <p>
+            The daily wage is calculated by dividing the base by the average monthly working days of 21.75 days.
+        </p>
+
+        <script>
+            // a = document.getElementById("num1").value
+            // b = document.getElementById("num2").value
+            // result = (+a) + (+b)
+
+            function calculate() {
+                a = document.getElementById("num1").value
+                b = document.getElementById("num2").value
+                result = a / 21.75 / 8 * 3 * b
+                document.getElementById("result").value = result
+            }
+
+            document.getElementById("cal").addEventListener('click', calculate)
+            document.getElementById("num1").addEventListener('change', calculate)
+            document.getElementById("num1").addEventListener('keyup', calculate)
+            document.getElementById("num2").addEventListener('change', calculate)
+            document.getElementById("num2").addEventListener('keyup', calculate)
+
+            // result = Math.pow(a, b)
+            // console.log('result:')
+            // console.log(result)
+        </script>
+    </div>
+
+</body>
+
+</html>

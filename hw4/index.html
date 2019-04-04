@@ -3,12 +3,28 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .container {
+        .container1 {
             background-color: beige;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            font-size: 16px;
+            font-size: 18px;
+        }
+        
+        footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: lavenderblush;
+            color: purple;
+            text-align: center;
+        }
+        
+        h1 {
+            color: dimgray;
+            font-size: 2em;
+            text-align: center;
+            background-color: lavenderblush;
         }
     </style>
 
@@ -18,17 +34,111 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2> A confusing data viualisation.</h2>
+
+    <h1 class="animated bounceInLeft "> Homework about a confusing data viualisation.
+    </h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <div class="container1">
         <p>
             Here is the original data visualisation photo:
         </p>
         <center>
             <img class="photo1" src="wrong DV.png" alt="wrong DV" width="528" height="411">
         </center>
+        <a href="https://jour2106-group7.github.io/"> Original source of the infographic</a>
+        <h3> Introductioin of this graph:</h3>
+        <p>
+            This graph was taken from the pervious students' work in Data Viualisation 2017, which was made to show that Hong Kong's English education level has fallen in recent years. The whole graph is responsive. As you click different districts, the line that
+            presented corresponding places will shown in the graph.
+        </p>
+        <p>
+            However, since the start point of this graph is 0, the line above may overlap on one another.
+        </p>
+        <p>
+            Also, the color of Hong Kong's line need to be standout which can contribute to the comparison between it and other districts.
+        </p>
+        <h3>
+            The suggested changing:
+        </h3>
+        <p>
+            First, make the start point of this garph is't 0, and I made it to 45. In this way, the
+        </p>
+        <p>
+            Then, I will highlight the Hong Kong line to <strong>red</strong>.
+        </p>
+
+        <script src="../Highcharts-7.0.3/code/highcharts.js"></script>
+        <script src="../Highcharts-7.0.3/code/modules/exporting.js"></script>
+        <script src="../Highcharts-7.0.3/code/modules/export-data.js"></script>
+        <h3>
+            This is my new graph:
+        </h3>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+        <script type="text/javascript">
+            Highcharts.chart('container', {
+                chart: {
+                    type: 'line'
+                },
+                title: {
+                    text: 'Average English proficiency score by region'
+                },
+                subtitle: {
+                    text: 'Source: Eduation First'
+                },
+                xAxis: {
+                    categories: ['2011', '2013', '2015']
+                },
+                yAxis: {
+                    staronTick: true,
+                    minPadding: 0.1,
+                    title: {
+                        text: "Educational level Ranking"
+                    }
+
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+
+
+                },
+
+                series: [{
+                        name: 'Hong Kong',
+                        color: 'red',
+                        data: [54.44, 53.54, 52.7]
+                    }, {
+                        name: 'Taiwan',
+                        data: [48.93, 50.95, 53.18]
+                    }, {
+                        name: 'China',
+                        data: [47.62, 50.77, 49.91]
+                    }, {
+                        name: 'Japan',
+                        data: [54.17, 53.21, 53.57]
+                    }, {
+                        name: 'Singapore',
+                        data: [58.56, 58.92, 61.08]
+                    }
+
+
+
+
+
+                ]
+            });
+        </script>
 
     </div>
-
+    <footer>
+        <p>From: Felicty</p>
+        <a href="http://datavis.studio">http://datavis.studio</a>
+    </footer>
 </body>
 
 </html>

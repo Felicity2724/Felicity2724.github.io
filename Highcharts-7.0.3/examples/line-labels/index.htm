@@ -1,59 +1,83 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Highcharts Example</title>
 
-		<style type="text/css">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example</title>
 
-		</style>
-	</head>
-	<body>
-<script src="../../code/highcharts.js"></script>
-<script src="../../code/modules/exporting.js"></script>
-<script src="../../code/modules/export-data.js"></script>
+    <style type="text/css">
 
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </style>
+</head>
+
+<body>
+    <script src="../../code/highcharts.js"></script>
+    <script src="../../code/modules/exporting.js"></script>
+    <script src="../../code/modules/export-data.js"></script>
+
+    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 
 
-		<script type="text/javascript">
-
-Highcharts.chart('container', {
-    chart: {
-        type: 'line'
-    },
-    title: {
-        text: 'Monthly Average Temperature'
-    },
-    subtitle: {
-        text: 'Source: WorldClimate.com'
-    },
-    xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    },
-    yAxis: {
-        title: {
-            text: 'Temperature (°C)'
-        }
-    },
-    plotOptions: {
-        line: {
-            dataLabels: {
-                enabled: true
+    <script type="text/javascript">
+        Highcharts.chart('container', {
+            chart: {
+                type: 'line'
             },
-            enableMouseTracking: false
-        }
-    },
-    series: [{
-        name: 'Tokyo',
-        data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    }, {
-        name: 'London',
-        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-    }]
-});
-		</script>
-	</body>
+            title: {
+                text: 'Average English proficiency score by region'
+            },
+            subtitle: {
+                text: 'Source: Eduation First'
+            },
+            xAxis: {
+                categories: ['2011', '2013', '2015']
+            },
+            yAxis: {
+                staronTick: true,
+                minPadding: 0.1,
+                title: {
+                    text: "Educational level Ranking"
+                }
+
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+
+
+            },
+
+            series: [{
+                    name: 'Hong Kong',
+                    color: 'red',
+                    data: [54.44, 53.54, 52.7]
+                }, {
+                    name: 'Taiwan',
+                    data: [48.93, 50.95, 53.18]
+                }, {
+                    name: 'China',
+                    data: [47.62, 50.77, 49.91]
+                }, {
+                    name: 'Japan',
+                    data: [54.17, 53.21, 53.57]
+                }, {
+                    name: 'Singapore',
+                    data: [58.56, 58.92, 61.08]
+                }
+
+
+
+
+
+            ]
+        });
+    </script>
+</body>
+
 </html>
